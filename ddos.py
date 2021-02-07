@@ -51,8 +51,4 @@ redhackaze.org | MyPoison ig:@yusuf.ngs                  """)
              sentstr = str(sentstr)
 
              print (sentstr+" packets are sending to the "+ip+" Port Number: "+str(port))
-             if (port == 65534):
-               port = 1
-    else:
-        count +=1
-
+            
